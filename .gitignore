@@ -3,8 +3,7 @@
 .RData
 .Ruserdata
 
-*.doc
-*.docx
+*.doc*
 *.xls*
 
 data*/
