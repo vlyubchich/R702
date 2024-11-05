@@ -47,8 +47,26 @@ TDx(seq.Date(from = as.Date("2020-12-31"),
              to = as.Date("2021-12-31"), by = 5))
 
 
+# Nice plot
+
+iris
+x = iris$Sepal.Length
+y = iris$Petal.Length
+
+plot(x, y)
+
+plot(x, y, 
+     las = 1, pch = 15, col = "tomato", cex = 2)
 
 
+source("code/fun_todaydate.R")
+
+myplot(iris$Sepal.Length, iris$Petal.Length)
+myplot(iris$Sepal.Length, iris$Petal.Length, pch = 5)
+myplot(iris$Sepal.Length, iris$Petal.Length, pch = 5, col = "blue", cex = 2)
+
+mybadplot(iris$Sepal.Length, iris$Petal.Length)
+mybadplot(iris$Sepal.Length, iris$Petal.Length, pch = 5, col = "blue", cex = 2)
 
 
 #### TOOLS
