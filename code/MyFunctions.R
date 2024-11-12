@@ -19,7 +19,10 @@ funPower <- function(x, y){
     z = x^y
     # browser()
     ra <- funRatio(x, y)
-    return(list(z = z, x, y, ratio = ra))
+    return(list(Power = z, 
+                x = x, 
+                y = y, 
+                Ratio = ra))
   }
 }
 
