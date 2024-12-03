@@ -107,6 +107,20 @@ system.time(
 stopCluster(cl)
 
 
+
+# MC pi ----
+
+cl <- makeCluster(detectCores())
+n_simulations <- 1000
+n_points <- 10000
+
+pi_estimates <- parSapply(cl, 1:n_simulations, function(i) {
+    monte_carlo_pi(n_points)
+})
+
+stopCluster(cl)
+
+
 # References ----
 # Jonathan Dursi. Beyond Single-Core R
 # https://ljdursi.github.io/beyond-single-core-R/#/
