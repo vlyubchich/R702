@@ -4,6 +4,10 @@
 .Ruserdata
 
 *.doc*
+*.csv
+*.html
 *.xls*
 
 data*/
+*_files/
+rsconnect/
