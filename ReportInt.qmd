@@ -66,5 +66,12 @@ leaflet(COORDINATES) %>%
                    )
 ```
 
+Here we define function $\Phi (x)$:
+$$
+\Phi (x) = \frac{1}{\sqrt{2 \pi}} \int^x_{-\infty} e^{-t^2/2} dt,
+$$ {#eq-normal}
+where $\pi \approx$ `r round(pi, 3)` is the constant.
+
+See our @eq-normal.
 
 
